@@ -20,6 +20,6 @@ exports.verify = (token) => {
         jwt.verify(token, privateKey, (err, decoded) => {
             if (err) reject(err);
             else resolve(decoded);
-        })
-    })
-}
+        });
+    });
+};
